@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Me</title>
+        <link rel="stylesheet" href="contact.css">
+    </head>
+    <body>
+        <div class="container">
+        <h2>Contact Me</h2>
+        <form id="contactForm" action="process.php" method="POST">
+            Full Name:<br>
+            <input type="text" name="fullname" required><br><br>
+
+            Email:<br>
+            <input type="email" name="email" required><br><br>
+
+            Mobile Number:<br>
+            <input type="text" name="mobile" required><br><br>
+
+            Reason of contacting:<br>
+            <textarea name="reason" required></textarea><br><br>
+
+            How did you find me?<br>
+            <div class="checkbox-group">
+                <input type="checkbox" name="findme[]" value="College" required> College<br>
+                <input type="checkbox" name="findme[]" value="Online Registration"> Online Registration<br>
+                <input type="checkbox" name="findme[]" value="Colleague"> Colleague<br>
+                <input type="checkbox" name="findme[]" value="Others"> Others<br>
+            </div><br>
+            
+            <input type="checkbox" name="confirm" required> I confirm I want to send the msg<br><br>
+            
+            <button type="submit">Submit</button>
+        </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,157 @@
+html { 
+    scroll-behavior: smooth; 
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    background: #111827;
+    color: #e5e7eb;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.header-padding {
+    padding-top: 5rem;
+}
+
+#navbar {
+    position: fixed;
+    inset: 0 0 auto 0;
+    height: 64px;
+    z-index: 50;
+    background: #1f2937;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.nav-content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 36px;
+    font-weight: 800;
+    color: #6366f1;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: none;
+    flex-grow: 1;
+    justify-content: center;
+    gap: 48px;
+}
+
+.nav-links a {
+    font-size: 14px;
+    font-weight: 500;
+    color: #e5e7eb;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 8px;
+    transition: color .15s;
+}
+
+.nav-links a:hover {
+    color: #6366f1;
+}
+
+.contact-button {
+    padding: 8px 24px;
+    background: #6366f1;
+    color: #fff;
+    border-radius: 9999px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.contact-button:hover {
+    background: #4f46e5;
+    box-shadow: 0 8px 20px rgba(99,102,241,.6);
+}
+
+header {
+    padding: 16px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+header p {
+    font-size: 20px;
+    color: #a5b4fc;
+}
+
+.Photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.section {
+    margin-bottom: 48px;
+}
+
+.section h2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #6366f1;
+    margin-bottom: 24px;
+    border-bottom: 2px solid #a5b4fc;
+    padding-bottom: 8px;
+}
+
+.card {
+    background: #1f2937;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,.1);
+}
+
+.card p, .card ul li {
+    font-size: 18px;
+}
+
+.card ul {
+    list-style: disc;
+    padding-left: 24px;
+    margin: 0;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.italic-note {
+    color: #9ca3af;
+    font-style: italic;
+    font-size: 14.5px;
+    margin-top: 4px;
+}
+
+.contact-details a {
+    color: #818cf8;
+    transition: color .15s;
+}
+
+.contact-details a:hover {
+    color: #a5b4fc;
+}
+
+@media (min-width: 768px) {
+    .nav-links { display: flex; }
+    .skills-grid { grid-template-columns: repeat(2,1fr); }
+    header h1 { font-size: 60px; }
+}
